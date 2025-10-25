@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="دليل المرور">
+    <link rel="manifest" href="manifest.json">
+    <title>لافتات المرور الكويتية</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>لافتات المرور الكويتية</h1>
+    </header>
+    
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="signs.html">لافتات المرور</a>
+        <a href="laws.html">قوانين المرور</a>
+    </nav>
+    
+    <section class="grid-section">
+        <div class="card" style="--i:1">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Stop_sign_Kuwait.jpg" alt="لافتة توقف كويتية" class="sign-image">
+            <h3>لافتة التوقف (Stop)</h3>
+            <p>شكلها مثل مضلع أحمر مع كلمة "توقف". يجب التوقف الكامل قبل التقاطع.</p>
+        </div>
+        <div class="card" style="--i:2">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/No_entry_sign_Kuwait.jpg" alt="لافتة منع دخول كويتية" class="sign-image">
+            <h3>لافتة المنع (No Entry)</h3>
+            <p>دائرة حمراء مع خط أبيض. تحظر الدخول إلى الطريق.</p>
+        </div>
+        <div class="card" style="--i:3">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Speed_limit_80_Kuwait.jpg" alt="لافتة حد سرعة 80 كويتية" class="sign-image">
+            <h3>لافتة الحد الأقصى للسرعة (Speed Limit)</h3>
+            <p>دائرة حمراء مع رقم. مثل 80 كم/ساعة في الطرق الرئيسية.</p>
+        </div>
+        <div class="card" style="--i:4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Warning_sign_Kuwait.jpg" alt="لافتة تحذير كويتية" class="sign-image">
+            <h3>لافتة التحذير (Warning)</h3>
+            <p>مثلث أصفر مع رمز. مثل منحنى خطر أو عبور مشاة.</p>
+        </div>
+        <div class="card" style="--i:5">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4d/Reduce_speed_Kuwait.jpg" alt="لافتة خفف السرعة كويتية" class="sign-image">
+            <h3>لافتة خفف (Reduce Speed)</h3>
+            <p>تطلب تقليل السرعة فوراً، غالباً في المناطق الخطرة.</p>
+        </div>
+        <div class="card" style="--i:6">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Stop_work_Kuwait.jpg" alt="لافتة قف للعمل كويتية" class="sign-image">
+            <h3>لافتة قف (Stop for Work)</h3>
+            <p>تشير إلى التوقف المؤقت في مناطق العمل أو الإصلاحات.</p>
+        </div>
+        <div class="card" style="--i:7">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Men_at_work_Kuwait.jpg" alt="لافتة عمل يشتغلون كويتية" class="sign-image">
+            <h3>لافتة عمل يشتغلون (Men at Work)</h3>
+            <p>تحذر من وجود عمال على الطريق، كن حذراً.</p>
+        </div>
+        <div class="card" style="--i:8">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Increase_speed_Kuwait.jpg" alt="لافتة زيادة السرعة كويتية" class="sign-image">
+            <h3>لافتة زيادة (Increase Speed)</h3>
+            <p>تشير إلى نهاية منطقة تقليل السرعة، يمكن زيادة السرعة تدريجياً.</p>
+        </div>
+        <div class="card" style="--i:9">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Pedestrian_crossing_Kuwait.jpg" alt="لافتة عبور مشاة كويتية" class="sign-image">
+            <h3>لافتة عبور مشاة (Pedestrian Crossing)</h3>
+            <p>تحذر من عبور المشاة، أبطئ وكن مستعداً للتوقف.</p>
+        </div>
+        <div class="card" style="--i:10">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Dangerous_curve_Kuwait.jpg" alt="لافتة منحنى خطر كويتية" class="sign-image">
+            <h3>لافتة منحنى خطر (Dangerous Curve)</h3>
+            <p>تحذر من منحنى حاد، قلل السرعة مسبقاً.</p>
+        </div>
+        <div class="card" style="--i:11">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/No_parking_Kuwait.jpg" alt="لافتة ممنوع الوقوف كويتية" class="sign-image">
+            <h3>لافتة ممنوع الوقوف (No Parking)</h3>
+            <p>تحظر الوقوف في المناطق المحددة لتجنب التداخل.</p>
+        </div>
+        <p style="grid-column: span 4; text-align: center; margin-top: 20px;">هذه أمثلة أساسية. للمزيد، راجع موقع وزارة الداخلية الكويتية.</p>
+        
+        <div class="notes">
+            <p><strong>ملاحظة:</strong> هذا الموقع تعليمي فقط ولا يحل محل الاستشارة الرسمية. للحصول على معلومات دقيقة، زر موقع وزارة الداخلية الكويتية.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>صمم بواسطة: شافي فهد 11 ع 2 ومحمد ناصر 11 ع 1</p>
+        <p>للمزيد من المعلومات، زر <a href="https://www.moi.gov.kw">موقع وزارة الداخلية الكويتية</a></p>
+    </footer>
+</body>
+</html>

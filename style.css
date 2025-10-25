@@ -1,0 +1,301 @@
+/* استيراد الخط من Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 0 0 30px 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    animation: fadeInDown 1.5s ease-out;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+    animation: pulse 2s infinite;
+}
+
+nav {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 700px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+}
+
+nav a {
+    margin: 0 25px;
+    text-decoration: none;
+    color: #1e3c72;
+    font-weight: 700;
+    font-size: 1.3em;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #FFD700;
+    transform: scale(1.1) translateY(-5px);
+    text-shadow: 0 0 10px #FFD700;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -8px;
+    left: 50%;
+    background: linear-gradient(90deg, #FFD700, #FF6B6B);
+    transition: width 0.4s ease, left 0.4s ease;
+    border-radius: 2px;
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+section {
+    flex: 1;
+    padding: 50px 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    text-align: center;
+    animation: slideUp 1s ease-out 0.5s both;
+}
+
+section h2 {
+    color: #1e3c72;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+section p {
+    font-size: 1.3em;
+    line-height: 1.8;
+    color: #555;
+}
+
+.safety-tips {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border-left: 6px solid #FFD700;
+    color: white;
+    animation: bounceIn 1s ease-out 1s both;
+}
+
+.safety-tips h3 {
+    color: #FFD700;
+    font-size: 1.8em;
+}
+
+.safety-tips ul {
+    list-style: none;
+    padding: 0;
+}
+
+.safety-tips li {
+    margin: 15px 0;
+    font-size: 1.2em;
+    animation: fadeInLeft 0.8s ease-out both;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+.notes {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 0;
+    border: 2px solid #fcb69f;
+    color: #856404;
+    font-size: 1.1em;
+    animation: zoomIn 1s ease-out 1.5s both;
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    position: relative;
+    overflow: hidden;
+    animation: slideUp 0.8s ease-out both;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.card h3 {
+    color: #1e3c72;
+    font-size: 1.6em;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+    color: #FFD700;
+}
+
+.card p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+.law-icon::before {
+    content: '⚖️';
+    font-size: 3em;
+    display: block;
+    margin-bottom: 15px;
+    animation: bounce 1s infinite;
+}
+
+.sign-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.sign-image:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    font-size: 1.1em;
+    margin-top: auto;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.2);
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #FFD700;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+footer a:hover {
+    color: #FF6B6B;
+    transform: scale(1.1);
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { opacity: 0; transform: scale(0.3); }
+    50% { opacity: 1; transform: scale(1.05); }
+    70% { transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeInLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes zoomIn {
+    from { opacity: 0; transform: scale(0.5); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-10px); }
+    60% { transform: translateY(-5px); }
+}
+
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    body {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    nav a {
+        padding: 10px 15px;
+        font-size: 1.2em;
+    }
+    .card {
+        padding: 20px;
+        margin: 10px 0;
+    }
+    .sign-image {
+        width: 100px;
+        height: 100px;
+    }
+    footer {
+        padding: 20px;
+        font-size: 1em;
+    }
+}
+
+@media all and (display-mode: standalone) {
+    body {
+        padding-top: 20px;
+    }
+}

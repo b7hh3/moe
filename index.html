@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="دليل المرور">
+    <link rel="manifest" href="manifest.json">
+    <title>دليل المرور الكويتي</title>
+    <link href="style.css" rel="stylesheet">
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('sw.js');
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>دليل المرور الكويتي</h1>
+        <p>تعلم لافتات المرور وقوانين السلامة لقيادة آمنة في الكويت</p>
+    </header>
+    
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="signs.html">لافتات المرور</a>
+        <a href="laws.html">قوانين المرور</a>
+    </nav>
+    
+    <section>
+        <h2>مرحباً بك في دليل المرور الكويتي</h2>
+        <p>هذا الموقع يساعدك على فهم لافتات المرور الكويتية وقوانين المرور الأساسية. اختر صفحة من القائمة أعلاه للبدء.</p>
+        <p>تذكر: السلامة أولاً! دائماً احترم القوانين لتجنب الحوادث.</p>
+        
+        <div class="safety-tips">
+            <h3>نصائح السلامة المرورية</h3>
+            <ul>
+                <li style="--i:1">ارتدِ حزام الأمان دائماً.</li>
+                <li style="--i:2">لا تستخدم الهاتف أثناء القيادة.</li>
+                <li style="--i:3">احترم حدود السرعة لتجنب الحوادث.</li>
+                <li style="--i:4">تجنب القيادة تحت تأثير الكحول.</li>
+                <li style="--i:5">كن حذراً في المناطق السكنية والمدارس.</li>
+            </ul>
+        </div>
+        
+        <div class="notes">
+            <p><strong>ملاحظة:</strong> هذا الموقع تعليمي فقط ولا يحل محل الاستشارة الرسمية. للحصول على معلومات دقيقة، زر موقع وزارة الداخلية الكويتية.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>صمم بواسطة: شافي فهد 11 ع 2 ومحمد ناصر 11 ع 1</p>
+        <p>للمزيد من المعلومات، زر <a href="https://www.moi.gov.kw">موقع وزارة الداخلية الكويتية</a></p>
+    </footer>
+</body>
+</html>
